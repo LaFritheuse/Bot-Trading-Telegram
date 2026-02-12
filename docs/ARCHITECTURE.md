@@ -1,15 +1,27 @@
 # Architecture
 
-## Entry point
-- main.py : démarre le bot
+## Overview
+This bot is composed of:
+- Telegram interface layer
+- Strategy layer
+- Execution / trade layer
+- Backtest engine
+- Data layer (price download, cache)
 
-## Core
-- strategies/ : contient les stratégies (RSI, EMA, etc.)
-- backtests/ : moteur de backtest
-- data/ : téléchargement des prix
+## Folder responsibilities
+- `main.py`: bootstraps config, starts components
+- `config/`: env, settings, secrets templates
+- `telegram/`: commands, handlers
+- `strategies/`: each file = one strategy
+- `backtests/`: runs backtest single/multi, metrics
+- `data/`: downloaders + cache
+- `tests/`: regression & unit tests
+- `reports/`: AI-generated reports (dated)
+- `artifacts/`: zip exports, logs, results
 
-## Interface
-- telegram/ : commandes Telegram
-
-## Other
-- config/ : paramètres
+## Strategy contract
+Each strategy must expose:
+- `name`
+- `generate_signals(df) -> df/signals`
+- `params_schema`
+- Must not print emojis in core loops (see BUG_LOG constraints)
