@@ -1,0 +1,11 @@
+{
+    "balance": 1000.0,
+    "trades": [],
+    "current_trade": null,
+    "strategies": {
+        "sniper_ema": true,
+        "sniper_short": true,
+        "rsi_bollinger": true
+    },
+    "trading_mode": "sequential"
+}
