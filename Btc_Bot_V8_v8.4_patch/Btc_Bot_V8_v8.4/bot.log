@@ -1,0 +1,1064 @@
+2026-02-24 14:16:47,655 - database - INFO - Création de la base de données : trades.json
+2026-02-24 14:16:48,354 - __main__ - INFO - Configuration validée ✓
+2026-02-24 14:16:49,133 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-24 14:16:49,134 - __main__ - INFO - ⏰ Scan de marché : toutes les 45s
+2026-02-24 14:16:49,134 - __main__ - INFO - 🔄 Lancement du polling...
+2026-02-24 14:16:49,265 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getMe "HTTP/1.1 200 OK"
+2026-02-24 14:16:49,268 - __main__ - INFO - 🚀 Démarrage du BTC Trader Bot V8...
+2026-02-24 14:16:49,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/setMyCommands "HTTP/1.1 200 OK"
+2026-02-24 14:16:49,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/sendMessage "HTTP/1.1 200 OK"
+2026-02-24 14:16:49,377 - __main__ - INFO - ✅ Bot démarré avec succès
+2026-02-24 14:16:49,377 - __main__ - INFO - 💰 Balance actuel : 1000.00$
+2026-02-24 14:16:49,378 - __main__ - INFO - 📊 Total trades historique : 0
+2026-02-24 14:16:49,406 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteWebhook "HTTP/1.1 200 OK"
+2026-02-24 14:16:49,411 - apscheduler.scheduler - INFO - Added job "check_market" to job store "default"
+2026-02-24 14:16:49,411 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-24 14:16:49,412 - telegram.ext.Application - INFO - Application started
+2026-02-24 14:16:59,141 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-02-24 13:17:44 UTC)" (scheduled at 2026-02-24 13:16:59.127086+00:00)
+2026-02-24 14:16:59,142 - trading - INFO - ⚙️ 14:16 - Scan Multi-Stratégies...
+2026-02-24 14:16:59,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:02,144 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:02,233 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:02,234 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-02-24 14:17:02,287 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:02,392 - trading - INFO - [CHECK_MARKET] tf=1h candles=300 last_time=2026-02-24 13:00:00
+2026-02-24 14:17:03,469 - trading - INFO - [CHECK_MARKET] done tf=1h in 4.327s
+2026-02-24 14:17:03,469 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-02-24 13:17:44 UTC)" executed successfully
+2026-02-24 14:17:03,764 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:03,814 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:03,815 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:03,895 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:05,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:05,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:05,525 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-02-24 14:17:05,585 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:06,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:06,338 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:06,341 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-02-24 14:17:06,405 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:09,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:09,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:09,136 - handlers.callbacks - INFO - Callback reçu : menu_history de l'utilisateur 2066493813
+2026-02-24 14:17:09,235 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:11,381 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:11,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:11,484 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-02-24 14:17:11,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:12,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:12,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:12,664 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-02-24 14:17:12,727 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:13,943 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:13,999 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:14,002 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:14,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:15,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:15,054 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:15,055 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:15,123 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:16,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:16,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:16,733 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:16,924 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:19,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:19,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:19,765 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:19,819 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:20,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:20,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:20,868 - handlers.callbacks - INFO - Callback reçu : btr_run_35040 de l'utilisateur 2066493813
+2026-02-24 14:17:20,921 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:20,922 - backtest_rsi - INFO - 📥 Téléchargement de 35040 bougies 15min BTC/USDT...
+2026-02-24 14:17:30,847 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:38,414 - backtest_rsi - INFO - ✅ 35040 bougies téléchargées
+2026-02-24 14:17:38,538 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:38,551 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 93111.00 | BB Lower: 93488.76 | RSI: 29.1
+2026-02-24 14:17:38,551 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 91349.26 | BB Lower: 91880.84 | RSI: 22.2
+2026-02-24 14:17:38,552 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88992.92 | BB Lower: 90517.19 | RSI: 18.6
+2026-02-24 14:17:38,552 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86888.10 | BB Lower: 87307.04 | RSI: 22.4
+2026-02-24 14:17:38,556 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 87700.00 | BB Lower: 87885.26 | RSI: 28.0
+2026-02-24 14:17:38,557 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85418.72 | BB Lower: 86657.59 | RSI: 14.8
+2026-02-24 14:17:38,557 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 83769.87 | BB Lower: 84835.29 | RSI: 27.0
+2026-02-24 14:17:38,560 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 87073.42 | BB Upper: 86877.37 | RSI: 72.0
+2026-02-24 14:17:38,561 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82831.36 | BB Lower: 83199.07 | RSI: 25.8
+2026-02-24 14:17:38,562 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 81641.26 | BB Lower: 82419.96 | RSI: 21.2
+2026-02-24 14:17:38,562 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 79400.00 | BB Lower: 79483.84 | RSI: 27.5
+2026-02-24 14:17:38,562 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 78371.64 | BB Lower: 78481.55 | RSI: 29.3
+2026-02-24 14:17:38,563 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 83337.01 | BB Upper: 82686.79 | RSI: 75.2
+2026-02-24 14:17:38,565 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 85500.00 | BB Upper: 85060.44 | RSI: 71.9
+2026-02-24 14:17:38,567 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88673.09 | BB Upper: 86998.57 | RSI: 78.4
+2026-02-24 14:17:38,568 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 91806.79 | BB Upper: 89287.18 | RSI: 84.4
+2026-02-24 14:17:38,568 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 95000.00 | BB Upper: 93809.93 | RSI: 82.2
+2026-02-24 14:17:38,570 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 87433.43 | BB Lower: 87937.03 | RSI: 27.6
+2026-02-24 14:17:38,571 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 83436.00 | BB Lower: 84745.36 | RSI: 23.3
+2026-02-24 14:17:38,573 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88094.08 | BB Upper: 87050.64 | RSI: 75.0
+2026-02-24 14:17:38,574 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90660.00 | BB Upper: 89389.40 | RSI: 82.2
+2026-02-24 14:17:38,578 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 89450.06 | BB Lower: 89814.69 | RSI: 28.1
+2026-02-24 14:17:38,581 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85600.00 | BB Lower: 86912.86 | RSI: 26.1
+2026-02-24 14:17:38,602 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85363.13 | BB Lower: 85621.77 | RSI: 28.4
+2026-02-24 14:17:38,603 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 83099.00 | BB Lower: 83507.93 | RSI: 16.6
+2026-02-24 14:17:38,605 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 81188.00 | BB Lower: 81569.39 | RSI: 29.7
+2026-02-24 14:17:38,605 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 80504.46 | BB Lower: 80524.55 | RSI: 27.4
+2026-02-24 14:17:38,608 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 79533.22 | BB Lower: 80110.55 | RSI: 28.2
+2026-02-24 14:17:38,611 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77300.01 | BB Lower: 77723.13 | RSI: 28.6
+2026-02-24 14:17:38,613 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 81535.45 | BB Upper: 81281.32 | RSI: 72.0
+2026-02-24 14:17:38,623 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 84539.85 | BB Upper: 83547.43 | RSI: 71.6
+2026-02-24 14:17:38,633 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 85309.71 | BB Upper: 84555.44 | RSI: 77.3
+2026-02-24 14:17:38,650 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 81228.00 | BB Lower: 81505.98 | RSI: 16.2
+2026-02-24 14:17:38,656 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 85870.01 | BB Upper: 85112.21 | RSI: 70.9
+2026-02-24 14:17:38,657 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 87453.67 | BB Upper: 87205.39 | RSI: 76.3
+2026-02-24 14:17:38,684 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 84500.00 | BB Upper: 84457.61 | RSI: 74.4
+2026-02-24 14:17:38,686 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 86129.64 | BB Upper: 85814.24 | RSI: 73.6
+2026-02-24 14:17:38,689 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 87783.72 | BB Upper: 87597.72 | RSI: 70.6
+2026-02-24 14:17:38,714 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82820.85 | BB Lower: 83223.04 | RSI: 22.6
+2026-02-24 14:17:38,720 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 83434.69 | BB Upper: 83399.01 | RSI: 71.4
+2026-02-24 14:17:38,737 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 83904.72 | BB Lower: 84038.94 | RSI: 29.2
+2026-02-24 14:17:38,741 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82706.70 | BB Lower: 83276.94 | RSI: 27.1
+2026-02-24 14:17:38,751 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 84000.00 | BB Upper: 83742.04 | RSI: 73.8
+2026-02-24 14:17:38,762 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 79636.19 | BB Lower: 80480.46 | RSI: 11.5
+2026-02-24 14:17:38,763 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77304.00 | BB Lower: 77531.56 | RSI: 20.5
+2026-02-24 14:17:38,765 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 75000.00 | BB Lower: 75644.49 | RSI: 23.0
+2026-02-24 14:17:38,779 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77400.00 | BB Lower: 77681.20 | RSI: 27.4
+2026-02-24 14:17:38,782 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 75284.17 | BB Lower: 75936.35 | RSI: 26.3
+2026-02-24 14:17:38,785 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 81250.00 | BB Upper: 79239.48 | RSI: 79.0
+2026-02-24 14:17:38,785 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 82485.00 | BB Upper: 81389.75 | RSI: 83.7
+2026-02-24 14:17:38,793 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 79154.50 | BB Lower: 80137.44 | RSI: 25.1
+2026-02-24 14:17:38,797 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 82985.71 | BB Upper: 82704.42 | RSI: 72.5
+2026-02-24 14:17:38,798 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 84220.00 | BB Upper: 83880.29 | RSI: 70.1
+2026-02-24 14:17:38,805 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 85905.00 | BB Upper: 85498.90 | RSI: 72.4
+2026-02-24 14:17:38,841 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 87179.25 | BB Upper: 86828.18 | RSI: 86.3
+2026-02-24 14:17:38,848 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88877.00 | BB Upper: 87936.53 | RSI: 72.0
+2026-02-24 14:17:38,850 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90191.53 | BB Upper: 89609.61 | RSI: 80.3
+2026-02-24 14:17:38,853 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 93888.00 | BB Upper: 92200.25 | RSI: 78.5
+2026-02-24 14:17:38,859 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 91935.41 | BB Lower: 92574.94 | RSI: 28.7
+2026-02-24 14:17:38,893 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96391.31 | BB Upper: 95951.81 | RSI: 76.5
+2026-02-24 14:17:38,913 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 95825.81 | BB Lower: 95928.45 | RSI: 29.6
+2026-02-24 14:17:38,917 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 94151.38 | BB Lower: 94527.58 | RSI: 20.1
+2026-02-24 14:17:38,931 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 98847.00 | BB Upper: 98486.30 | RSI: 75.0
+2026-02-24 14:17:38,934 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 101525.03 | BB Upper: 100525.61 | RSI: 78.7
+2026-02-24 14:17:38,935 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 102682.54 | BB Upper: 102402.33 | RSI: 75.2
+2026-02-24 14:17:38,935 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 103664.86 | BB Upper: 102839.08 | RSI: 73.9
+2026-02-24 14:17:38,944 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 104809.53 | BB Upper: 104498.22 | RSI: 71.3
+2026-02-24 14:17:38,978 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 107108.62 | BB Upper: 106419.18 | RSI: 71.3
+2026-02-24 14:17:38,989 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 109458.00 | BB Upper: 108341.35 | RSI: 75.7
+2026-02-24 14:17:38,993 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 111471.64 | BB Upper: 111282.34 | RSI: 75.3
+2026-02-24 14:17:39,029 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 104600.50 | BB Lower: 105328.82 | RSI: 29.9
+2026-02-24 14:17:39,039 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 104430.00 | BB Upper: 104290.96 | RSI: 72.5
+2026-02-24 14:17:39,057 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 106336.01 | BB Upper: 105865.66 | RSI: 72.3
+2026-02-24 14:17:39,068 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100948.44 | BB Lower: 101358.20 | RSI: 22.2
+2026-02-24 14:17:39,088 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 106168.92 | BB Upper: 105962.17 | RSI: 71.4
+2026-02-24 14:17:39,093 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 109374.99 | BB Upper: 109072.37 | RSI: 74.0
+2026-02-24 14:17:39,107 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 103575.35 | BB Lower: 104319.03 | RSI: 21.4
+2026-02-24 14:17:39,123 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 108888.00 | BB Upper: 108660.26 | RSI: 79.7
+2026-02-24 14:17:39,128 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 103371.02 | BB Lower: 103633.55 | RSI: 24.2
+2026-02-24 14:17:39,147 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 101110.00 | BB Lower: 101807.48 | RSI: 26.4
+2026-02-24 14:17:39,150 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100297.64 | BB Lower: 101087.84 | RSI: 29.7
+2026-02-24 14:17:39,151 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 99076.86 | BB Lower: 99541.95 | RSI: 27.6
+2026-02-24 14:17:39,156 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 105546.49 | BB Upper: 105193.26 | RSI: 77.4
+2026-02-24 14:17:39,164 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 107910.93 | BB Upper: 107584.53 | RSI: 73.7
+2026-02-24 14:17:39,197 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 109584.67 | BB Upper: 109031.15 | RSI: 74.4
+2026-02-24 14:17:39,227 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 111999.79 | BB Upper: 110879.46 | RSI: 84.1
+2026-02-24 14:17:39,231 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113454.03 | BB Upper: 113034.96 | RSI: 81.3
+2026-02-24 14:17:39,233 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 116800.00 | BB Upper: 115478.59 | RSI: 85.3
+2026-02-24 14:17:39,234 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118404.22 | BB Upper: 117817.46 | RSI: 77.1
+2026-02-24 14:17:39,248 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 121492.48 | BB Upper: 120395.04 | RSI: 79.4
+2026-02-24 14:17:39,252 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 120337.75 | BB Lower: 120792.77 | RSI: 29.9
+2026-02-24 14:17:39,254 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118142.00 | BB Lower: 118654.92 | RSI: 27.1
+2026-02-24 14:17:39,267 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118794.64 | BB Upper: 118675.37 | RSI: 70.1
+2026-02-24 14:17:39,279 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118395.00 | BB Lower: 119000.63 | RSI: 27.5
+2026-02-24 14:17:39,295 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 119600.00 | BB Upper: 119573.19 | RSI: 75.3
+2026-02-24 14:17:39,318 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 113251.00 | BB Lower: 113460.34 | RSI: 29.3
+2026-02-24 14:17:39,346 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118494.32 | BB Upper: 117909.27 | RSI: 80.6
+2026-02-24 14:17:39,350 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 121286.80 | BB Upper: 120358.30 | RSI: 83.5
+2026-02-24 14:17:39,363 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 124250.00 | BB Upper: 124097.27 | RSI: 71.7
+2026-02-24 14:17:39,366 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118700.00 | BB Lower: 119799.76 | RSI: 18.2
+2026-02-24 14:17:39,371 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 117001.69 | BB Lower: 117234.02 | RSI: 21.4
+2026-02-24 14:17:39,393 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 114870.00 | BB Lower: 115217.54 | RSI: 27.9
+2026-02-24 14:17:39,425 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 112001.00 | BB Lower: 112114.27 | RSI: 29.8
+2026-02-24 14:17:39,435 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 114992.04 | BB Lower: 115119.23 | RSI: 27.6
+2026-02-24 14:17:39,441 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 112000.00 | BB Lower: 113409.49 | RSI: 22.6
+2026-02-24 14:17:39,447 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 110655.01 | BB Lower: 111223.46 | RSI: 29.0
+2026-02-24 14:17:39,462 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 110566.00 | BB Lower: 110585.06 | RSI: 29.9
+2026-02-24 14:17:39,472 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 108500.00 | BB Lower: 109082.47 | RSI: 25.4
+2026-02-24 14:17:39,527 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113809.27 | BB Upper: 113476.04 | RSI: 78.3
+2026-02-24 14:17:39,533 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 115488.09 | BB Upper: 115471.77 | RSI: 76.4
+2026-02-24 14:17:39,559 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 115583.91 | BB Lower: 115800.90 | RSI: 28.2
+2026-02-24 14:17:39,581 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 111800.00 | BB Lower: 113586.41 | RSI: 21.4
+2026-02-24 14:17:39,593 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113890.00 | BB Upper: 113486.19 | RSI: 73.9
+2026-02-24 14:17:39,623 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 116591.80 | BB Upper: 115455.04 | RSI: 79.8
+2026-02-24 14:17:39,625 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118199.00 | BB Upper: 117981.57 | RSI: 79.0
+2026-02-24 14:17:39,631 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 121022.07 | BB Upper: 120686.37 | RSI: 72.1
+2026-02-24 14:17:39,635 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 123830.94 | BB Upper: 122659.66 | RSI: 87.2
+2026-02-24 14:17:39,641 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 125437.91 | BB Upper: 125105.94 | RSI: 81.7
+2026-02-24 14:17:39,666 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118500.00 | BB Lower: 119932.40 | RSI: 28.8
+2026-02-24 14:17:39,668 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 113039.00 | BB Lower: 115097.83 | RSI: 20.1
+2026-02-24 14:17:39,668 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 102000.00 | BB Lower: 112271.66 | RSI: 10.0
+2026-02-24 14:17:39,678 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 110487.06 | BB Lower: 110904.63 | RSI: 28.1
+2026-02-24 14:17:39,688 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 113616.50 | BB Lower: 114187.96 | RSI: 24.1
+2026-02-24 14:17:39,692 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 111355.01 | BB Lower: 111751.56 | RSI: 23.7
+2026-02-24 14:17:39,705 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 111400.00 | BB Lower: 111619.53 | RSI: 29.6
+2026-02-24 14:17:39,712 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 108361.69 | BB Lower: 109419.91 | RSI: 27.5
+2026-02-24 14:17:39,714 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 106639.79 | BB Lower: 107409.92 | RSI: 21.5
+2026-02-24 14:17:39,715 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 104505.00 | BB Lower: 105090.16 | RSI: 14.6
+2026-02-24 14:17:39,735 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 106186.19 | BB Lower: 106401.36 | RSI: 27.7
+2026-02-24 14:17:39,749 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 109303.86 | BB Lower: 109648.27 | RSI: 29.0
+2026-02-24 14:17:39,750 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 107650.94 | BB Lower: 107947.78 | RSI: 15.5
+2026-02-24 14:17:39,752 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113170.94 | BB Upper: 111957.06 | RSI: 83.2
+2026-02-24 14:17:39,767 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 110188.38 | BB Upper: 109410.50 | RSI: 75.2
+2026-02-24 14:17:39,780 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 111711.16 | BB Upper: 111554.13 | RSI: 70.8
+2026-02-24 14:17:39,785 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113466.23 | BB Upper: 113168.53 | RSI: 77.3
+2026-02-24 14:17:39,791 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 115647.90 | BB Upper: 115611.77 | RSI: 70.8
+2026-02-24 14:17:39,807 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 108001.49 | BB Lower: 109399.92 | RSI: 21.5
+2026-02-24 14:17:39,810 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 106346.00 | BB Lower: 106495.95 | RSI: 29.5
+2026-02-24 14:17:39,829 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 104200.00 | BB Lower: 105139.08 | RSI: 21.8
+2026-02-24 14:17:39,832 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 102164.00 | BB Lower: 102623.29 | RSI: 29.2
+2026-02-24 14:17:39,832 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100289.33 | BB Lower: 100565.73 | RSI: 20.0
+2026-02-24 14:17:39,835 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 99081.87 | BB Lower: 99491.15 | RSI: 28.8
+2026-02-24 14:17:39,849 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100300.95 | BB Lower: 101294.54 | RSI: 24.8
+2026-02-24 14:17:39,864 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 106042.44 | BB Upper: 105507.63 | RSI: 74.0
+2026-02-24 14:17:39,887 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100550.00 | BB Lower: 100781.22 | RSI: 28.2
+2026-02-24 14:17:39,887 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 98234.28 | BB Lower: 98731.44 | RSI: 16.1
+2026-02-24 14:17:39,889 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 97404.75 | BB Lower: 97763.49 | RSI: 29.6
+2026-02-24 14:17:39,892 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 95538.00 | BB Lower: 96038.40 | RSI: 26.4
+2026-02-24 14:17:39,909 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96635.11 | BB Upper: 96334.04 | RSI: 70.9
+2026-02-24 14:17:39,915 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 91738.01 | BB Lower: 91750.21 | RSI: 28.1
+2026-02-24 14:17:39,917 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 90008.00 | BB Lower: 90569.55 | RSI: 29.1
+2026-02-24 14:17:39,933 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 90431.54 | BB Lower: 91199.68 | RSI: 29.5
+2026-02-24 14:17:39,933 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88267.00 | BB Lower: 89320.55 | RSI: 23.3
+2026-02-24 14:17:39,934 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86816.08 | BB Lower: 87314.73 | RSI: 17.7
+2026-02-24 14:17:39,938 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82000.00 | BB Lower: 84796.26 | RSI: 24.0
+2026-02-24 14:17:39,939 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82474.59 | BB Lower: 82913.72 | RSI: 19.6
+2026-02-24 14:17:39,955 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 85923.07 | BB Upper: 85600.56 | RSI: 73.8
+2026-02-24 14:17:39,969 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88595.23 | BB Upper: 88284.37 | RSI: 70.6
+2026-02-24 14:17:39,979 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90111.71 | BB Upper: 89498.76 | RSI: 83.7
+2026-02-24 14:17:39,980 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 91887.00 | BB Upper: 91447.33 | RSI: 78.5
+2026-02-24 14:17:39,998 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86959.99 | BB Lower: 88164.56 | RSI: 8.3
+2026-02-24 14:17:40,002 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85400.00 | BB Lower: 85755.53 | RSI: 25.4
+2026-02-24 14:17:40,013 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88500.00 | BB Upper: 87999.84 | RSI: 74.7
+2026-02-24 14:17:40,013 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90869.46 | BB Upper: 89802.86 | RSI: 78.3
+2026-02-24 14:17:40,017 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 92898.19 | BB Upper: 92455.16 | RSI: 73.8
+2026-02-24 14:17:40,029 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88332.55 | BB Lower: 88886.84 | RSI: 29.6
+2026-02-24 14:17:40,046 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 93511.61 | BB Upper: 92340.93 | RSI: 83.8
+2026-02-24 14:17:40,072 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88017.00 | BB Lower: 88302.28 | RSI: 29.9
+2026-02-24 14:17:40,075 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86621.91 | BB Lower: 87536.32 | RSI: 21.7
+2026-02-24 14:17:40,083 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 87314.28 | BB Upper: 86815.76 | RSI: 72.8
+2026-02-24 14:17:40,089 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90365.85 | BB Upper: 89018.23 | RSI: 83.3
+2026-02-24 14:17:40,097 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88848.11 | BB Upper: 88074.69 | RSI: 75.1
+2026-02-24 14:17:40,098 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 84481.31 | BB Lower: 84503.01 | RSI: 27.4
+2026-02-24 14:17:40,122 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88767.20 | BB Upper: 88362.26 | RSI: 75.9
+2026-02-24 14:17:40,132 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88304.45 | BB Lower: 88588.34 | RSI: 26.9
+2026-02-24 14:17:40,149 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88049.89 | BB Upper: 87903.12 | RSI: 70.0
+2026-02-24 14:17:40,154 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 89328.13 | BB Upper: 89007.21 | RSI: 77.0
+2026-02-24 14:17:40,193 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 89412.01 | BB Lower: 89679.15 | RSI: 26.5
+2026-02-24 14:17:40,204 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 93969.40 | BB Upper: 93587.34 | RSI: 73.6
+2026-02-24 14:17:40,217 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 89377.50 | BB Lower: 89609.68 | RSI: 29.9
+2026-02-24 14:17:40,242 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96495.00 | BB Upper: 94979.23 | RSI: 80.5
+2026-02-24 14:17:40,245 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96998.00 | BB Upper: 96478.20 | RSI: 75.1
+2026-02-24 14:17:40,265 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 92125.30 | BB Lower: 93318.91 | RSI: 15.1
+2026-02-24 14:17:40,271 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 90828.11 | BB Lower: 91176.43 | RSI: 22.7
+2026-02-24 14:17:40,275 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 87900.00 | BB Lower: 88978.78 | RSI: 28.0
+2026-02-24 14:17:40,296 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86428.57 | BB Lower: 86832.27 | RSI: 22.2
+2026-02-24 14:17:40,314 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88022.09 | BB Lower: 88464.75 | RSI: 26.3
+2026-02-24 14:17:40,317 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85224.71 | BB Lower: 86252.55 | RSI: 14.8
+2026-02-24 14:17:40,321 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 81118.00 | BB Lower: 83202.61 | RSI: 17.3
+2026-02-24 14:17:40,328 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 80500.00 | BB Lower: 80665.45 | RSI: 28.6
+2026-02-24 14:17:40,328 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 78637.54 | BB Lower: 79384.67 | RSI: 19.5
+2026-02-24 14:17:40,329 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77098.95 | BB Lower: 77363.27 | RSI: 22.4
+2026-02-24 14:17:40,338 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 74604.00 | BB Lower: 75379.46 | RSI: 28.0
+2026-02-24 14:17:40,351 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77156.24 | BB Lower: 77668.20 | RSI: 29.2
+2026-02-24 14:17:40,352 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 75086.83 | BB Lower: 75652.01 | RSI: 25.9
+2026-02-24 14:17:40,352 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 73710.88 | BB Lower: 73975.38 | RSI: 19.0
+2026-02-24 14:17:40,367 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 68011.11 | BB Lower: 68319.13 | RSI: 29.3
+2026-02-24 14:17:40,369 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63373.00 | BB Lower: 63946.73 | RSI: 24.2
+2026-02-24 14:17:40,371 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 60100.00 | BB Lower: 61593.39 | RSI: 21.9
+2026-02-24 14:17:40,378 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 67388.24 | BB Upper: 67351.89 | RSI: 70.3
+2026-02-24 14:17:40,379 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68647.45 | BB Upper: 68103.47 | RSI: 74.6
+2026-02-24 14:17:40,380 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69800.00 | BB Upper: 69404.41 | RSI: 77.9
+2026-02-24 14:17:40,381 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 71500.00 | BB Upper: 71097.23 | RSI: 85.0
+2026-02-24 14:17:40,384 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 67300.00 | BB Lower: 68106.93 | RSI: 29.1
+2026-02-24 14:17:40,398 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 68982.76 | BB Lower: 69219.27 | RSI: 24.3
+2026-02-24 14:17:40,410 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 67556.00 | BB Lower: 67944.05 | RSI: 25.9
+2026-02-24 14:17:40,414 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68834.34 | BB Upper: 67732.18 | RSI: 73.5
+2026-02-24 14:17:40,428 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68028.45 | BB Upper: 67525.31 | RSI: 72.1
+2026-02-24 14:17:40,428 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69309.80 | BB Upper: 68411.66 | RSI: 78.7
+2026-02-24 14:17:40,432 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69735.61 | BB Upper: 69479.38 | RSI: 76.6
+2026-02-24 14:17:40,436 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 70926.42 | BB Upper: 70919.70 | RSI: 71.0
+2026-02-24 14:17:40,451 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66902.15 | BB Lower: 67535.24 | RSI: 27.1
+2026-02-24 14:17:40,465 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66137.14 | BB Lower: 66301.96 | RSI: 28.7
+2026-02-24 14:17:40,480 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 65006.11 | BB Lower: 65654.73 | RSI: 14.7
+2026-02-24 14:17:40,487 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63342.90 | BB Lower: 63557.72 | RSI: 29.0
+2026-02-24 14:17:40,489 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63000.00 | BB Lower: 63328.00 | RSI: 21.8
+2026-02-24 14:17:40,491 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 62868.69 | BB Lower: 63188.93 | RSI: 28.6
+2026-02-24 14:17:40,493 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 62700.80 | BB Lower: 62790.52 | RSI: 27.8
+2026-02-24 14:17:40,499 - backtest_rsi - INFO - Backtest RSI terminé : 214 trades, WR: 26.6%
+2026-02-24 14:17:40,556 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:40,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:44,128 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-02-24 13:18:29 UTC)" (scheduled at 2026-02-24 13:17:44.127086+00:00)
+2026-02-24 14:17:44,128 - trading - INFO - ⚙️ 14:17 - Scan Multi-Stratégies...
+2026-02-24 14:17:44,380 - trading - INFO - [CHECK_MARKET] tf=1h candles=300 last_time=2026-02-24 13:00:00
+2026-02-24 14:17:44,629 - trading - INFO - [CHECK_MARKET] done tf=1h in 0.500s
+2026-02-24 14:17:44,632 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-02-24 13:18:29 UTC)" executed successfully
+2026-02-24 14:17:50,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:50,698 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:50,701 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:50,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:51,981 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:52,030 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:52,031 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-02-24 14:17:52,099 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:53,890 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:53,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:53,938 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-02-24 14:17:53,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:55,100 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:55,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:55,148 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-02-24 14:17:55,201 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:17:59,699 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:17:59,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:17:59,747 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-02-24 14:17:59,811 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:01,226 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:01,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:01,276 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-02-24 14:18:01,337 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:02,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:02,495 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:02,499 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-02-24 14:18:02,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:04,171 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:04,335 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:04,337 - handlers.callbacks - INFO - Callback reçu : btr_custom_input de l'utilisateur 2066493813
+2026-02-24 14:18:04,441 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:09,298 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:09,340 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteMessage "HTTP/1.1 200 OK"
+2026-02-24 14:18:09,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:09,394 - backtest_rsi - INFO - 📥 Téléchargement de 25000 bougies 15min BTC/USDT...
+2026-02-24 14:18:19,332 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:21,943 - backtest_rsi - INFO - ✅ 25000 bougies téléchargées
+2026-02-24 14:18:22,088 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:22,101 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 107438.20 | BB Upper: 107411.77 | RSI: 87.2
+2026-02-24 14:18:22,102 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 110495.00 | BB Upper: 109546.22 | RSI: 84.1
+2026-02-24 14:18:22,107 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 103575.35 | BB Lower: 104319.03 | RSI: 21.4
+2026-02-24 14:18:22,113 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 108888.00 | BB Upper: 108660.26 | RSI: 79.7
+2026-02-24 14:18:22,115 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 103371.02 | BB Lower: 103633.55 | RSI: 24.2
+2026-02-24 14:18:22,121 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 101110.00 | BB Lower: 101807.48 | RSI: 26.4
+2026-02-24 14:18:22,122 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100297.64 | BB Lower: 101087.84 | RSI: 29.7
+2026-02-24 14:18:22,123 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 99076.86 | BB Lower: 99541.95 | RSI: 27.6
+2026-02-24 14:18:22,125 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 105546.49 | BB Upper: 105193.26 | RSI: 77.4
+2026-02-24 14:18:22,128 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 107910.93 | BB Upper: 107584.53 | RSI: 73.7
+2026-02-24 14:18:22,138 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 109584.67 | BB Upper: 109031.15 | RSI: 74.4
+2026-02-24 14:18:22,149 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 111999.79 | BB Upper: 110879.46 | RSI: 84.1
+2026-02-24 14:18:22,151 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113454.03 | BB Upper: 113034.96 | RSI: 81.3
+2026-02-24 14:18:22,151 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 116800.00 | BB Upper: 115478.59 | RSI: 85.3
+2026-02-24 14:18:22,152 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118404.22 | BB Upper: 117817.46 | RSI: 77.1
+2026-02-24 14:18:22,162 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 121492.48 | BB Upper: 120395.04 | RSI: 79.4
+2026-02-24 14:18:22,166 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 120337.75 | BB Lower: 120792.77 | RSI: 29.9
+2026-02-24 14:18:22,168 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118142.00 | BB Lower: 118654.92 | RSI: 27.1
+2026-02-24 14:18:22,181 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118794.64 | BB Upper: 118675.37 | RSI: 70.1
+2026-02-24 14:18:22,193 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118395.00 | BB Lower: 119000.63 | RSI: 27.5
+2026-02-24 14:18:22,208 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 119600.00 | BB Upper: 119573.19 | RSI: 75.3
+2026-02-24 14:18:22,260 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 113251.00 | BB Lower: 113460.34 | RSI: 29.3
+2026-02-24 14:18:22,295 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118494.32 | BB Upper: 117909.27 | RSI: 80.6
+2026-02-24 14:18:22,299 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 121286.80 | BB Upper: 120358.30 | RSI: 83.5
+2026-02-24 14:18:22,312 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 124250.00 | BB Upper: 124097.27 | RSI: 71.7
+2026-02-24 14:18:22,314 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118700.00 | BB Lower: 119799.76 | RSI: 18.2
+2026-02-24 14:18:22,319 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 117001.69 | BB Lower: 117234.02 | RSI: 21.4
+2026-02-24 14:18:22,342 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 114870.00 | BB Lower: 115217.54 | RSI: 27.9
+2026-02-24 14:18:22,372 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 112001.00 | BB Lower: 112114.27 | RSI: 29.8
+2026-02-24 14:18:22,382 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 114992.04 | BB Lower: 115119.23 | RSI: 27.6
+2026-02-24 14:18:22,388 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 112000.00 | BB Lower: 113409.49 | RSI: 22.6
+2026-02-24 14:18:22,395 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 110655.01 | BB Lower: 111223.46 | RSI: 29.0
+2026-02-24 14:18:22,409 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 110566.00 | BB Lower: 110585.06 | RSI: 29.9
+2026-02-24 14:18:22,418 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 108500.00 | BB Lower: 109082.47 | RSI: 25.4
+2026-02-24 14:18:22,468 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113809.27 | BB Upper: 113476.04 | RSI: 78.3
+2026-02-24 14:18:22,475 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 115488.09 | BB Upper: 115471.77 | RSI: 76.4
+2026-02-24 14:18:22,501 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 115583.91 | BB Lower: 115800.90 | RSI: 28.2
+2026-02-24 14:18:22,521 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 111800.00 | BB Lower: 113586.41 | RSI: 21.4
+2026-02-24 14:18:22,534 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113890.00 | BB Upper: 113486.19 | RSI: 73.9
+2026-02-24 14:18:22,562 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 116591.80 | BB Upper: 115455.04 | RSI: 79.8
+2026-02-24 14:18:22,564 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 118199.00 | BB Upper: 117981.57 | RSI: 79.0
+2026-02-24 14:18:22,570 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 121022.07 | BB Upper: 120686.37 | RSI: 72.1
+2026-02-24 14:18:22,574 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 123830.94 | BB Upper: 122659.66 | RSI: 87.2
+2026-02-24 14:18:22,582 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 125437.91 | BB Upper: 125105.94 | RSI: 81.7
+2026-02-24 14:18:22,605 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 118500.00 | BB Lower: 119932.40 | RSI: 28.8
+2026-02-24 14:18:22,607 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 113039.00 | BB Lower: 115097.83 | RSI: 20.1
+2026-02-24 14:18:22,608 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 102000.00 | BB Lower: 112271.66 | RSI: 10.0
+2026-02-24 14:18:22,618 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 110487.06 | BB Lower: 110904.63 | RSI: 28.1
+2026-02-24 14:18:22,628 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 113616.50 | BB Lower: 114187.96 | RSI: 24.1
+2026-02-24 14:18:22,632 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 111355.01 | BB Lower: 111751.56 | RSI: 23.7
+2026-02-24 14:18:22,643 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 111400.00 | BB Lower: 111619.53 | RSI: 29.6
+2026-02-24 14:18:22,649 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 108361.69 | BB Lower: 109419.91 | RSI: 27.5
+2026-02-24 14:18:22,652 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 106639.79 | BB Lower: 107409.92 | RSI: 21.5
+2026-02-24 14:18:22,653 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 104505.00 | BB Lower: 105090.16 | RSI: 14.6
+2026-02-24 14:18:22,674 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 106186.19 | BB Lower: 106401.36 | RSI: 27.7
+2026-02-24 14:18:22,686 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 109303.86 | BB Lower: 109648.27 | RSI: 29.0
+2026-02-24 14:18:22,686 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 107650.94 | BB Lower: 107947.78 | RSI: 15.5
+2026-02-24 14:18:22,688 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113170.94 | BB Upper: 111957.06 | RSI: 83.2
+2026-02-24 14:18:22,703 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 110188.38 | BB Upper: 109410.50 | RSI: 75.2
+2026-02-24 14:18:22,717 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 111711.16 | BB Upper: 111554.13 | RSI: 70.8
+2026-02-24 14:18:22,722 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 113466.23 | BB Upper: 113168.53 | RSI: 77.3
+2026-02-24 14:18:22,727 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 115647.90 | BB Upper: 115611.77 | RSI: 70.8
+2026-02-24 14:18:22,741 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 108001.49 | BB Lower: 109399.92 | RSI: 21.5
+2026-02-24 14:18:22,744 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 106346.00 | BB Lower: 106495.95 | RSI: 29.5
+2026-02-24 14:18:22,764 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 104200.00 | BB Lower: 105139.08 | RSI: 21.8
+2026-02-24 14:18:22,766 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 102164.00 | BB Lower: 102623.29 | RSI: 29.2
+2026-02-24 14:18:22,766 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100289.33 | BB Lower: 100565.73 | RSI: 20.0
+2026-02-24 14:18:22,769 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 99081.87 | BB Lower: 99491.15 | RSI: 28.8
+2026-02-24 14:18:22,782 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100300.95 | BB Lower: 101294.54 | RSI: 24.8
+2026-02-24 14:18:22,796 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 106042.44 | BB Upper: 105507.63 | RSI: 74.0
+2026-02-24 14:18:22,817 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 100550.00 | BB Lower: 100781.22 | RSI: 28.2
+2026-02-24 14:18:22,817 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 98234.28 | BB Lower: 98731.44 | RSI: 16.1
+2026-02-24 14:18:22,820 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 97404.75 | BB Lower: 97763.49 | RSI: 29.6
+2026-02-24 14:18:22,822 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 95538.00 | BB Lower: 96038.40 | RSI: 26.4
+2026-02-24 14:18:22,838 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96635.11 | BB Upper: 96334.04 | RSI: 70.9
+2026-02-24 14:18:22,845 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 91738.01 | BB Lower: 91750.21 | RSI: 28.1
+2026-02-24 14:18:22,846 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 90008.00 | BB Lower: 90569.55 | RSI: 29.1
+2026-02-24 14:18:22,862 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 90431.54 | BB Lower: 91199.68 | RSI: 29.5
+2026-02-24 14:18:22,862 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88267.00 | BB Lower: 89320.55 | RSI: 23.3
+2026-02-24 14:18:22,863 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86816.08 | BB Lower: 87314.73 | RSI: 17.7
+2026-02-24 14:18:22,866 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82000.00 | BB Lower: 84796.26 | RSI: 24.0
+2026-02-24 14:18:22,867 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 82474.59 | BB Lower: 82913.72 | RSI: 19.6
+2026-02-24 14:18:22,883 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 85923.07 | BB Upper: 85600.56 | RSI: 73.8
+2026-02-24 14:18:22,897 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88595.23 | BB Upper: 88284.37 | RSI: 70.6
+2026-02-24 14:18:22,906 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90111.71 | BB Upper: 89498.76 | RSI: 83.7
+2026-02-24 14:18:22,908 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 91887.00 | BB Upper: 91447.33 | RSI: 78.5
+2026-02-24 14:18:22,924 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86959.99 | BB Lower: 88164.56 | RSI: 8.3
+2026-02-24 14:18:22,928 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85400.00 | BB Lower: 85755.53 | RSI: 25.4
+2026-02-24 14:18:22,939 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88500.00 | BB Upper: 87999.84 | RSI: 74.7
+2026-02-24 14:18:22,939 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90869.46 | BB Upper: 89802.86 | RSI: 78.3
+2026-02-24 14:18:22,943 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 92898.19 | BB Upper: 92455.16 | RSI: 73.8
+2026-02-24 14:18:22,955 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88332.55 | BB Lower: 88886.84 | RSI: 29.6
+2026-02-24 14:18:22,971 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 93511.61 | BB Upper: 92340.93 | RSI: 83.8
+2026-02-24 14:18:22,997 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88017.00 | BB Lower: 88302.28 | RSI: 29.9
+2026-02-24 14:18:23,000 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86621.91 | BB Lower: 87536.32 | RSI: 21.7
+2026-02-24 14:18:23,007 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 87314.28 | BB Upper: 86815.76 | RSI: 72.8
+2026-02-24 14:18:23,013 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 90365.85 | BB Upper: 89018.23 | RSI: 83.3
+2026-02-24 14:18:23,021 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88848.11 | BB Upper: 88074.69 | RSI: 75.1
+2026-02-24 14:18:23,022 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 84481.31 | BB Lower: 84503.01 | RSI: 27.4
+2026-02-24 14:18:23,046 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88767.20 | BB Upper: 88362.26 | RSI: 75.9
+2026-02-24 14:18:23,054 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88304.45 | BB Lower: 88588.34 | RSI: 26.9
+2026-02-24 14:18:23,070 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 88049.89 | BB Upper: 87903.12 | RSI: 70.0
+2026-02-24 14:18:23,076 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 89328.13 | BB Upper: 89007.21 | RSI: 77.0
+2026-02-24 14:18:23,114 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 89412.01 | BB Lower: 89679.15 | RSI: 26.5
+2026-02-24 14:18:23,125 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 93969.40 | BB Upper: 93587.34 | RSI: 73.6
+2026-02-24 14:18:23,138 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 89377.50 | BB Lower: 89609.68 | RSI: 29.9
+2026-02-24 14:18:23,161 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96495.00 | BB Upper: 94979.23 | RSI: 80.5
+2026-02-24 14:18:23,165 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 96998.00 | BB Upper: 96478.20 | RSI: 75.1
+2026-02-24 14:18:23,184 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 92125.30 | BB Lower: 93318.91 | RSI: 15.1
+2026-02-24 14:18:23,192 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 90828.11 | BB Lower: 91176.43 | RSI: 22.7
+2026-02-24 14:18:23,196 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 87900.00 | BB Lower: 88978.78 | RSI: 28.0
+2026-02-24 14:18:23,217 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 86428.57 | BB Lower: 86832.27 | RSI: 22.2
+2026-02-24 14:18:23,234 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 88022.09 | BB Lower: 88464.75 | RSI: 26.3
+2026-02-24 14:18:23,237 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 85224.71 | BB Lower: 86252.55 | RSI: 14.8
+2026-02-24 14:18:23,241 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 81118.00 | BB Lower: 83202.61 | RSI: 17.3
+2026-02-24 14:18:23,248 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 80500.00 | BB Lower: 80665.45 | RSI: 28.6
+2026-02-24 14:18:23,248 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 78637.54 | BB Lower: 79384.67 | RSI: 19.5
+2026-02-24 14:18:23,249 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77098.95 | BB Lower: 77363.27 | RSI: 22.4
+2026-02-24 14:18:23,257 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 74604.00 | BB Lower: 75379.46 | RSI: 28.0
+2026-02-24 14:18:23,270 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77156.24 | BB Lower: 77668.20 | RSI: 29.2
+2026-02-24 14:18:23,271 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 75086.83 | BB Lower: 75652.01 | RSI: 25.9
+2026-02-24 14:18:23,272 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 73710.88 | BB Lower: 73975.38 | RSI: 19.0
+2026-02-24 14:18:23,285 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 68011.11 | BB Lower: 68319.13 | RSI: 29.3
+2026-02-24 14:18:23,288 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63373.00 | BB Lower: 63946.73 | RSI: 24.2
+2026-02-24 14:18:23,289 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 60100.00 | BB Lower: 61593.39 | RSI: 21.9
+2026-02-24 14:18:23,295 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 67388.24 | BB Upper: 67351.89 | RSI: 70.3
+2026-02-24 14:18:23,295 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68647.45 | BB Upper: 68103.47 | RSI: 74.6
+2026-02-24 14:18:23,296 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69800.00 | BB Upper: 69404.41 | RSI: 77.9
+2026-02-24 14:18:23,296 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 71500.00 | BB Upper: 71097.23 | RSI: 85.0
+2026-02-24 14:18:23,299 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 67300.00 | BB Lower: 68106.93 | RSI: 29.1
+2026-02-24 14:18:23,314 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 68982.76 | BB Lower: 69219.27 | RSI: 24.3
+2026-02-24 14:18:23,326 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 67556.00 | BB Lower: 67944.05 | RSI: 25.9
+2026-02-24 14:18:23,330 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68834.34 | BB Upper: 67732.18 | RSI: 73.5
+2026-02-24 14:18:23,344 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68028.45 | BB Upper: 67525.31 | RSI: 72.1
+2026-02-24 14:18:23,344 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69309.80 | BB Upper: 68411.66 | RSI: 78.7
+2026-02-24 14:18:23,347 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69735.61 | BB Upper: 69479.38 | RSI: 76.6
+2026-02-24 14:18:23,351 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 70926.42 | BB Upper: 70919.70 | RSI: 71.0
+2026-02-24 14:18:23,368 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66902.15 | BB Lower: 67535.24 | RSI: 27.1
+2026-02-24 14:18:23,380 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66137.14 | BB Lower: 66301.96 | RSI: 28.7
+2026-02-24 14:18:23,396 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 65006.11 | BB Lower: 65654.73 | RSI: 14.7
+2026-02-24 14:18:23,402 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63342.90 | BB Lower: 63557.72 | RSI: 29.0
+2026-02-24 14:18:23,404 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63000.00 | BB Lower: 63328.00 | RSI: 21.8
+2026-02-24 14:18:23,406 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 62868.69 | BB Lower: 63188.93 | RSI: 28.6
+2026-02-24 14:18:23,409 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 62700.80 | BB Lower: 62790.52 | RSI: 27.8
+2026-02-24 14:18:23,414 - backtest_rsi - INFO - Backtest RSI terminé : 140 trades, WR: 27.1%
+2026-02-24 14:18:23,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:29,135 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-02-24 13:19:14 UTC)" (scheduled at 2026-02-24 13:18:29.127086+00:00)
+2026-02-24 14:18:29,136 - trading - INFO - ⚙️ 14:18 - Scan Multi-Stratégies...
+2026-02-24 14:18:29,365 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:29,393 - trading - INFO - [CHECK_MARKET] tf=1h candles=300 last_time=2026-02-24 13:00:00
+2026-02-24 14:18:29,656 - trading - INFO - [CHECK_MARKET] done tf=1h in 0.520s
+2026-02-24 14:18:29,656 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-02-24 13:19:14 UTC)" executed successfully
+2026-02-24 14:18:35,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:35,989 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:35,994 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-02-24 14:18:36,108 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:37,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:37,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:37,257 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-02-24 14:18:37,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:39,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:39,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:39,662 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-02-24 14:18:39,834 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:41,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:41,087 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:41,091 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-02-24 14:18:41,147 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:42,355 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:42,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:42,412 - handlers.callbacks - INFO - Callback reçu : ask_stop de l'utilisateur 2066493813
+2026-02-24 14:18:42,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-02-24 14:18:43,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-02-24 14:18:43,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-02-24 14:18:43,487 - handlers.callbacks - INFO - Callback reçu : confirm_stop de l'utilisateur 2066493813
+2026-02-24 14:18:43,488 - handlers.callbacks - WARNING - 🛑 Arrêt du bot demandé par l'utilisateur
+2026-02-24 14:18:43,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteMessage "HTTP/1.1 200 OK"
+2026-03-04 16:39:41,930 - __main__ - INFO - Configuration validée ✓
+2026-03-04 16:39:42,482 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-04 16:39:42,483 - __main__ - INFO - ⏰ Scan de marché : toutes les 45s
+2026-03-04 16:39:42,483 - __main__ - INFO - 🔄 Lancement du polling...
+2026-03-04 16:39:42,635 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getMe "HTTP/1.1 200 OK"
+2026-03-04 16:39:42,641 - __main__ - INFO - 🚀 Démarrage du BTC Trader Bot V8...
+2026-03-04 16:39:42,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/setMyCommands "HTTP/1.1 200 OK"
+2026-03-04 16:39:42,777 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/sendMessage "HTTP/1.1 200 OK"
+2026-03-04 16:39:42,782 - __main__ - INFO - ✅ Bot démarré avec succès
+2026-03-04 16:39:42,783 - __main__ - INFO - 💰 Balance actuel : 1000.00$
+2026-03-04 16:39:42,783 - __main__ - INFO - 📊 Total trades historique : 0
+2026-03-04 16:39:42,815 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteWebhook "HTTP/1.1 200 OK"
+2026-03-04 16:39:42,822 - apscheduler.scheduler - INFO - Added job "check_market" to job store "default"
+2026-03-04 16:39:42,822 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-04 16:39:42,823 - telegram.ext.Application - INFO - Application started
+2026-03-04 16:39:51,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:39:51,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:39:51,510 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 16:39:51,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:39:52,476 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:40:37 UTC)" (scheduled at 2026-03-04 15:39:52.470817+00:00)
+2026-03-04 16:39:52,477 - trading - INFO - ⚙️ 16:39 - Scan Multi-Stratégies...
+2026-03-04 16:39:52,695 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:39:52,736 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:39:52,737 - handlers.callbacks - INFO - Callback reçu : info_sniper de l'utilisateur 2066493813
+2026-03-04 16:39:52,798 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:39:54,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:39:55,546 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:39:55,547 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 16:39:55,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:39:55,769 - trading - INFO - [CHECK_MARKET] tf=1h candles=300 last_time=2026-03-04 15:00:00
+2026-03-04 16:39:56,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:39:56,603 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 72997.00 | BB Upper: 72329.56 | RSI: 76.6
+2026-03-04 16:39:56,604 - trading - INFO - 📈 ENTRÉE EN POSITION SHORT : 72972.15$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:39:56,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:39:56,624 - handlers.callbacks - INFO - Callback reçu : info_sniper de l'utilisateur 2066493813
+2026-03-04 16:39:56,673 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:39:56,709 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/sendMessage "HTTP/1.1 200 OK"
+2026-03-04 16:39:56,710 - trading - INFO - [CHECK_MARKET] done tf=1h in 4.233s
+2026-03-04 16:39:56,710 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:40:37 UTC)" executed successfully
+2026-03-04 16:39:57,342 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:39:57,390 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:39:57,391 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 16:39:57,454 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:40:02,932 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:40:03,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:40:03,035 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 16:40:03,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:40:12,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:40:23,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:40:33,029 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:40:37,483 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:41:22 UTC)" (scheduled at 2026-03-04 15:40:37.470817+00:00)
+2026-03-04 16:40:37,483 - trading - INFO - ⚙️ 16:40 - Scan Multi-Stratégies...
+2026-03-04 16:40:37,728 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:30:00
+2026-03-04 16:40:37,728 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:15:00 close=72972.15$ high=72997.00$ low=71983.87$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:40:37,728 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.245s
+2026-03-04 16:40:37,729 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:41:22 UTC)" executed successfully
+2026-03-04 16:40:43,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:40:53,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:03,117 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:12,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:12,971 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:12,975 - handlers.callbacks - INFO - Callback reçu : refresh de l'utilisateur 2066493813
+2026-03-04 16:41:13,019 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 400 Bad Request"
+2026-03-04 16:41:14,379 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:14,422 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:14,423 - handlers.callbacks - INFO - Callback reçu : menu_history de l'utilisateur 2066493813
+2026-03-04 16:41:14,487 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:41:15,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:16,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:16,013 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 16:41:16,137 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:41:17,150 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:17,245 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:17,249 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 16:41:17,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:41:20,526 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:20,652 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:20,654 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 16:41:20,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:41:22,480 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:42:07 UTC)" (scheduled at 2026-03-04 15:41:22.470817+00:00)
+2026-03-04 16:41:22,481 - trading - INFO - ⚙️ 16:41 - Scan Multi-Stratégies...
+2026-03-04 16:41:22,733 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:30:00
+2026-03-04 16:41:22,733 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:15:00 close=72972.15$ high=72997.00$ low=71983.87$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:41:22,734 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.253s
+2026-03-04 16:41:22,734 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:42:07 UTC)" executed successfully
+2026-03-04 16:41:30,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:36,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:36,200 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:36,204 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 16:41:36,257 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:41:39,257 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:39,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:41:39,316 - handlers.callbacks - INFO - Callback reçu : info_sniper de l'utilisateur 2066493813
+2026-03-04 16:41:39,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:41:49,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:41:59,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:42:07,486 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:42:52 UTC)" (scheduled at 2026-03-04 15:42:07.470817+00:00)
+2026-03-04 16:42:07,486 - trading - INFO - ⚙️ 16:42 - Scan Multi-Stratégies...
+2026-03-04 16:42:07,736 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:30:00
+2026-03-04 16:42:07,736 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:15:00 close=72972.15$ high=72997.00$ low=71983.87$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:42:07,820 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.333s
+2026-03-04 16:42:07,820 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:42:52 UTC)" executed successfully
+2026-03-04 16:42:09,343 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:42:19,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:42:29,398 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:42:39,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:42:49,453 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:42:52,475 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:43:37 UTC)" (scheduled at 2026-03-04 15:42:52.470817+00:00)
+2026-03-04 16:42:52,476 - trading - INFO - ⚙️ 16:42 - Scan Multi-Stratégies...
+2026-03-04 16:42:52,734 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:30:00
+2026-03-04 16:42:52,735 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:15:00 close=72972.15$ high=72997.00$ low=71983.87$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:42:52,736 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.260s
+2026-03-04 16:42:52,736 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:43:37 UTC)" executed successfully
+2026-03-04 16:42:59,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:43:09,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:43:19,541 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:43:29,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:43:37,474 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:44:22 UTC)" (scheduled at 2026-03-04 15:43:37.470817+00:00)
+2026-03-04 16:43:37,475 - trading - INFO - ⚙️ 16:43 - Scan Multi-Stratégies...
+2026-03-04 16:43:37,730 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:30:00
+2026-03-04 16:43:37,731 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:15:00 close=72972.15$ high=72997.00$ low=71983.87$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:43:37,731 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.257s
+2026-03-04 16:43:37,731 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:44:22 UTC)" executed successfully
+2026-03-04 16:43:39,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:43:49,635 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:43:59,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:09,693 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:19,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:22,478 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:45:07 UTC)" (scheduled at 2026-03-04 15:44:22.470817+00:00)
+2026-03-04 16:44:22,478 - trading - INFO - ⚙️ 16:44 - Scan Multi-Stratégies...
+2026-03-04 16:44:22,724 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:30:00
+2026-03-04 16:44:22,724 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:15:00 close=72972.15$ high=72997.00$ low=71983.87$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:44:22,724 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.246s
+2026-03-04 16:44:22,724 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:45:07 UTC)" executed successfully
+2026-03-04 16:44:24,667 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:24,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:44:24,803 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 16:44:24,864 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:44:34,697 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:35,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:35,338 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:44:35,339 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 16:44:35,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:44:45,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:48,908 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:49,012 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:44:49,016 - handlers.callbacks - INFO - Callback reçu : menu_history de l'utilisateur 2066493813
+2026-03-04 16:44:49,066 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:44:50,235 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:44:50,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:44:50,276 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 16:44:50,325 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:45:00,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:45:07,483 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:45:52 UTC)" (scheduled at 2026-03-04 15:45:07.470817+00:00)
+2026-03-04 16:45:07,483 - trading - INFO - ⚙️ 16:45 - Scan Multi-Stratégies...
+2026-03-04 16:45:07,736 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 15:45:00
+2026-03-04 16:45:07,736 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 15:30:00 close=72705.65$ high=73097.08$ low=72576.10$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 16:45:07,736 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.253s
+2026-03-04 16:45:07,737 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 15:45:52 UTC)" executed successfully
+2026-03-04 16:45:10,292 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:45:16,597 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:45:16,710 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:45:16,711 - handlers.callbacks - INFO - Callback reçu : ask_stop de l'utilisateur 2066493813
+2026-03-04 16:45:16,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 16:45:17,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 16:45:17,732 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 16:45:17,736 - handlers.callbacks - INFO - Callback reçu : confirm_stop de l'utilisateur 2066493813
+2026-03-04 16:45:17,737 - handlers.callbacks - WARNING - 🛑 Arrêt du bot demandé par l'utilisateur
+2026-03-04 16:45:17,774 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteMessage "HTTP/1.1 200 OK"
+2026-03-04 18:11:27,597 - __main__ - INFO - Configuration validée ✓
+2026-03-04 18:11:27,979 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-04 18:11:27,980 - __main__ - INFO - ⏰ Scan de marché : toutes les 45s
+2026-03-04 18:11:27,980 - __main__ - INFO - 🔄 Lancement du polling...
+2026-03-04 18:11:28,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getMe "HTTP/1.1 200 OK"
+2026-03-04 18:11:28,093 - __main__ - INFO - 🚀 Démarrage du BTC Trader Bot V8...
+2026-03-04 18:11:28,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/setMyCommands "HTTP/1.1 200 OK"
+2026-03-04 18:11:28,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/sendMessage "HTTP/1.1 200 OK"
+2026-03-04 18:11:28,220 - __main__ - INFO - ✅ Bot démarré avec succès
+2026-03-04 18:11:28,220 - __main__ - INFO - 💰 Balance actuel : 1000.00$
+2026-03-04 18:11:28,220 - __main__ - INFO - 📊 Total trades historique : 0
+2026-03-04 18:11:28,247 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteWebhook "HTTP/1.1 200 OK"
+2026-03-04 18:11:28,249 - apscheduler.scheduler - INFO - Added job "check_market" to job store "default"
+2026-03-04 18:11:28,249 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-04 18:11:28,250 - telegram.ext.Application - INFO - Application started
+2026-03-04 18:11:33,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:11:33,770 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:11:33,773 - handlers.callbacks - INFO - Callback reçu : refresh de l'utilisateur 2066493813
+2026-03-04 18:11:33,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 400 Bad Request"
+2026-03-04 18:11:34,693 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:11:34,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:11:34,834 - handlers.callbacks - INFO - Callback reçu : refresh de l'utilisateur 2066493813
+2026-03-04 18:11:34,917 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 400 Bad Request"
+2026-03-04 18:11:36,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:11:36,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:11:36,691 - handlers.callbacks - INFO - Callback reçu : menu_history de l'utilisateur 2066493813
+2026-03-04 18:11:36,745 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:11:37,994 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:12:22 UTC)" (scheduled at 2026-03-04 17:11:37.979369+00:00)
+2026-03-04 18:11:37,995 - trading - INFO - ⚙️ 18:11 - Scan Multi-Stratégies...
+2026-03-04 18:11:38,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:11:38,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:11:38,603 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 18:11:38,721 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:11:39,419 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:11:39,461 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:11:39,463 - handlers.callbacks - INFO - Callback reçu : refresh de l'utilisateur 2066493813
+2026-03-04 18:11:39,504 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 400 Bad Request"
+2026-03-04 18:11:40,829 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 17:00:00
+2026-03-04 18:11:40,830 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 16:45:00 close=73294.84$ high=73458.00$ low=73079.14$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 18:11:40,830 - trading - INFO - [CHECK_MARKET] done tf=15m in 2.835s
+2026-03-04 18:11:40,830 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:12:22 UTC)" executed successfully
+2026-03-04 18:11:49,450 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:11:59,478 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:12:09,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:12:19,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:12:22,993 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:13:07 UTC)" (scheduled at 2026-03-04 17:12:22.979369+00:00)
+2026-03-04 18:12:22,994 - trading - INFO - ⚙️ 18:12 - Scan Multi-Stratégies...
+2026-03-04 18:12:23,243 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 17:00:00
+2026-03-04 18:12:23,247 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 16:45:00 close=73294.84$ high=73458.00$ low=73079.14$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 18:12:23,248 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.254s
+2026-03-04 18:12:23,248 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:13:07 UTC)" executed successfully
+2026-03-04 18:12:29,566 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:12:39,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:12:49,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:12:59,651 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:07,991 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:13:52 UTC)" (scheduled at 2026-03-04 17:13:07.979369+00:00)
+2026-03-04 18:13:07,992 - trading - INFO - ⚙️ 18:13 - Scan Multi-Stratégies...
+2026-03-04 18:13:08,240 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 17:00:00
+2026-03-04 18:13:08,241 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 16:45:00 close=73294.84$ high=73458.00$ low=73079.14$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 18:13:08,241 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.249s
+2026-03-04 18:13:08,241 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:13:52 UTC)" executed successfully
+2026-03-04 18:13:09,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:15,702 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:15,808 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:15,809 - handlers.callbacks - INFO - Callback reçu : refresh de l'utilisateur 2066493813
+2026-03-04 18:13:15,847 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 400 Bad Request"
+2026-03-04 18:13:16,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:16,927 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:16,928 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 18:13:16,975 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:17,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:17,676 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:17,678 - handlers.callbacks - INFO - Callback reçu : info_sniper de l'utilisateur 2066493813
+2026-03-04 18:13:17,732 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:18,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:18,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:18,498 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration de l'utilisateur 2066493813
+2026-03-04 18:13:18,550 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:19,485 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:19,522 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:19,526 - handlers.callbacks - INFO - Callback reçu : bt_run_4300 de l'utilisateur 2066493813
+2026-03-04 18:13:19,573 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:19,574 - backtest - INFO - 🏦 Téléchargement de 4300h de données BTC/USDT...
+2026-03-04 18:13:23,644 - backtest - INFO - ✅ 4300 bougies téléchargées
+2026-03-04 18:13:23,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:23,951 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 115690.76$ | EMA: 115529.84$ | Vol: 321 vs MA: 207
+2026-03-04 18:13:23,957 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 111938.51$ | EMA: 111512.20$ | Vol: 1130 vs MA: 302
+2026-03-04 18:13:23,974 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 111033.79$ | EMA: 110488.40$ | Vol: 992 vs MA: 778
+2026-03-04 18:13:23,975 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 112170.52$ | EMA: 110312.70$ | Vol: 3336 vs MA: 899
+2026-03-04 18:13:23,976 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 110246.94$ | EMA: 109800.18$ | Vol: 1472 vs MA: 1150
+2026-03-04 18:13:23,983 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 110895.53$ | EMA: 110891.14$ | Vol: 920 vs MA: 447
+2026-03-04 18:13:23,989 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 104512.65$ | EMA: 104346.47$ | Vol: 773 vs MA: 599
+2026-03-04 18:13:24,002 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89830.79$ | EMA: 88675.82$ | Vol: 2470 vs MA: 765
+2026-03-04 18:13:24,005 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89271.99$ | EMA: 89014.40$ | Vol: 2530 vs MA: 874
+2026-03-04 18:13:24,009 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 90945.17$ | EMA: 90250.06$ | Vol: 1918 vs MA: 473
+2026-03-04 18:13:24,010 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 92707.51$ | EMA: 90438.52$ | Vol: 3162 vs MA: 634
+2026-03-04 18:13:24,012 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 91792.99$ | EMA: 90898.42$ | Vol: 788 vs MA: 744
+2026-03-04 18:13:24,016 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89675.85$ | EMA: 89081.33$ | Vol: 2427 vs MA: 532
+2026-03-04 18:13:24,017 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 88851.70$ | EMA: 88599.83$ | Vol: 2595 vs MA: 592
+2026-03-04 18:13:24,020 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 88537.87$ | EMA: 88203.79$ | Vol: 427 vs MA: 213
+2026-03-04 18:13:24,023 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 88371.27$ | EMA: 88014.46$ | Vol: 1137 vs MA: 266
+2026-03-04 18:13:24,023 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89199.99$ | EMA: 88003.61$ | Vol: 2824 vs MA: 482
+2026-03-04 18:13:24,025 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 87910.00$ | EMA: 87899.69$ | Vol: 250 vs MA: 172
+2026-03-04 18:13:24,031 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 91366.39$ | EMA: 90969.25$ | Vol: 874 vs MA: 722
+2026-03-04 18:13:24,031 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 91176.47$ | EMA: 90944.37$ | Vol: 3441 vs MA: 655
+2026-03-04 18:13:24,044 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 90080.00$ | EMA: 89503.05$ | Vol: 1092 vs MA: 565
+2026-03-04 18:13:24,058 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 69746.20$ | EMA: 69544.14$ | Vol: 1348 vs MA: 873
+2026-03-04 18:13:24,060 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 69763.24$ | EMA: 69460.82$ | Vol: 1602 vs MA: 740
+2026-03-04 18:13:24,063 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 68218.85$ | EMA: 68190.66$ | Vol: 997 vs MA: 652
+2026-03-04 18:13:24,068 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 66973.20$ | EMA: 66524.16$ | Vol: 2180 vs MA: 878
+2026-03-04 18:13:24,069 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 67310.53$ | EMA: 66912.39$ | Vol: 1058 vs MA: 951
+2026-03-04 18:13:24,071 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 66934.79$ | EMA: 66562.93$ | Vol: 1311 vs MA: 914
+2026-03-04 18:13:24,072 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 67177.06$ | EMA: 66489.83$ | Vol: 3015 vs MA: 1068
+2026-03-04 18:13:24,072 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 67725.81$ | EMA: 66860.40$ | Vol: 1695 vs MA: 1033
+2026-03-04 18:13:24,073 - backtest - INFO - Backtest terminé : 29 trades, WR: 24.1%
+2026-03-04 18:13:24,123 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:26,337 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:26,373 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:26,374 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration de l'utilisateur 2066493813
+2026-03-04 18:13:26,433 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:27,268 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:27,304 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:27,305 - handlers.callbacks - INFO - Callback reçu : bt_run_8760 de l'utilisateur 2066493813
+2026-03-04 18:13:27,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:27,354 - backtest - INFO - 🏦 Téléchargement de 8760h de données BTC/USDT...
+2026-03-04 18:13:30,504 - backtest - INFO - ✅ 8760 bougies téléchargées
+2026-03-04 18:13:30,551 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:30,560 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 84724.58$ | EMA: 84382.82$ | Vol: 5578 vs MA: 1100
+2026-03-04 18:13:30,563 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 84197.46$ | EMA: 84045.51$ | Vol: 1046 vs MA: 786
+2026-03-04 18:13:30,565 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 83881.40$ | EMA: 83663.53$ | Vol: 1193 vs MA: 634
+2026-03-04 18:13:30,574 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 84362.00$ | EMA: 84171.21$ | Vol: 1019 vs MA: 705
+2026-03-04 18:13:30,577 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 84415.99$ | EMA: 83999.21$ | Vol: 1616 vs MA: 1097
+2026-03-04 18:13:30,577 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 84460.00$ | EMA: 83935.62$ | Vol: 2048 vs MA: 1526
+2026-03-04 18:13:30,582 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 82202.16$ | EMA: 80725.89$ | Vol: 14052 vs MA: 2701
+2026-03-04 18:13:30,583 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 81272.19$ | EMA: 80979.14$ | Vol: 2096 vs MA: 1791
+2026-03-04 18:13:30,588 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 84029.97$ | EMA: 83401.97$ | Vol: 2052 vs MA: 968
+2026-03-04 18:13:30,602 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 95067.36$ | EMA: 94746.34$ | Vol: 618 vs MA: 586
+2026-03-04 18:13:30,609 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 102371.61$ | EMA: 101908.03$ | Vol: 663 vs MA: 468
+2026-03-04 18:13:30,610 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 103032.01$ | EMA: 103013.96$ | Vol: 2037 vs MA: 1427
+2026-03-04 18:13:30,615 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 107260.00$ | EMA: 107168.11$ | Vol: 587 vs MA: 579
+2026-03-04 18:13:30,620 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 106285.72$ | EMA: 105918.89$ | Vol: 753 vs MA: 603
+2026-03-04 18:13:30,622 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 105649.59$ | EMA: 105616.47$ | Vol: 1030 vs MA: 346
+2026-03-04 18:13:30,623 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 105092.28$ | EMA: 105022.85$ | Vol: 1335 vs MA: 960
+2026-03-04 18:13:30,626 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 107612.69$ | EMA: 107155.36$ | Vol: 862 vs MA: 641
+2026-03-04 18:13:30,629 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 106386.00$ | EMA: 106105.04$ | Vol: 657 vs MA: 355
+2026-03-04 18:13:30,632 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 105811.74$ | EMA: 105528.61$ | Vol: 1084 vs MA: 351
+2026-03-04 18:13:30,635 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 103739.99$ | EMA: 103674.04$ | Vol: 1394 vs MA: 993
+2026-03-04 18:13:30,638 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 106807.42$ | EMA: 106675.95$ | Vol: 1241 vs MA: 341
+2026-03-04 18:13:30,641 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 107636.98$ | EMA: 107623.64$ | Vol: 1415 vs MA: 472
+2026-03-04 18:13:30,651 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 118183.92$ | EMA: 117533.11$ | Vol: 688 vs MA: 659
+2026-03-04 18:13:30,653 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 118204.99$ | EMA: 117936.86$ | Vol: 952 vs MA: 568
+2026-03-04 18:13:30,655 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 117971.93$ | EMA: 117688.86$ | Vol: 749 vs MA: 477
+2026-03-04 18:13:30,657 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 118415.80$ | EMA: 118014.66$ | Vol: 800 vs MA: 745
+2026-03-04 18:13:30,662 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 115187.96$ | EMA: 115135.98$ | Vol: 1042 vs MA: 348
+2026-03-04 18:13:30,667 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 118799.01$ | EMA: 118798.16$ | Vol: 1837 vs MA: 1321
+2026-03-04 18:13:30,669 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 118366.06$ | EMA: 118336.59$ | Vol: 338 vs MA: 236
+2026-03-04 18:13:30,673 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 115808.23$ | EMA: 115312.71$ | Vol: 6272 vs MA: 792
+2026-03-04 18:13:30,676 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 113239.44$ | EMA: 113082.86$ | Vol: 543 vs MA: 477
+2026-03-04 18:13:30,681 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 111149.99$ | EMA: 110389.63$ | Vol: 2481 vs MA: 749
+2026-03-04 18:13:30,682 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 111490.73$ | EMA: 110668.32$ | Vol: 670 vs MA: 525
+2026-03-04 18:13:30,691 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 115690.76$ | EMA: 115649.19$ | Vol: 321 vs MA: 207
+2026-03-04 18:13:30,697 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 111938.51$ | EMA: 111530.41$ | Vol: 1130 vs MA: 302
+2026-03-04 18:13:30,714 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 111033.79$ | EMA: 110488.51$ | Vol: 992 vs MA: 778
+2026-03-04 18:13:30,715 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 112170.52$ | EMA: 110312.78$ | Vol: 3336 vs MA: 899
+2026-03-04 18:13:30,716 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 110246.94$ | EMA: 109800.24$ | Vol: 1472 vs MA: 1150
+2026-03-04 18:13:30,723 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 110895.53$ | EMA: 110891.14$ | Vol: 920 vs MA: 447
+2026-03-04 18:13:30,729 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 104512.65$ | EMA: 104346.47$ | Vol: 773 vs MA: 599
+2026-03-04 18:13:30,741 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89830.79$ | EMA: 88675.82$ | Vol: 2470 vs MA: 765
+2026-03-04 18:13:30,744 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89271.99$ | EMA: 89014.40$ | Vol: 2530 vs MA: 874
+2026-03-04 18:13:30,748 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 90945.17$ | EMA: 90250.06$ | Vol: 1918 vs MA: 473
+2026-03-04 18:13:30,755 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 92707.51$ | EMA: 90438.52$ | Vol: 3162 vs MA: 634
+2026-03-04 18:13:30,757 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 91792.99$ | EMA: 90898.42$ | Vol: 788 vs MA: 744
+2026-03-04 18:13:30,761 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89675.85$ | EMA: 89081.33$ | Vol: 2427 vs MA: 532
+2026-03-04 18:13:30,762 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 88851.70$ | EMA: 88599.83$ | Vol: 2595 vs MA: 592
+2026-03-04 18:13:30,765 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 88537.87$ | EMA: 88203.79$ | Vol: 427 vs MA: 213
+2026-03-04 18:13:30,768 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 88371.27$ | EMA: 88014.46$ | Vol: 1137 vs MA: 266
+2026-03-04 18:13:30,769 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 89199.99$ | EMA: 88003.61$ | Vol: 2824 vs MA: 482
+2026-03-04 18:13:30,771 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 87910.00$ | EMA: 87899.69$ | Vol: 250 vs MA: 172
+2026-03-04 18:13:30,776 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 91366.39$ | EMA: 90969.25$ | Vol: 874 vs MA: 722
+2026-03-04 18:13:30,777 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 91176.47$ | EMA: 90944.37$ | Vol: 3441 vs MA: 655
+2026-03-04 18:13:30,790 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 90080.00$ | EMA: 89503.05$ | Vol: 1092 vs MA: 565
+2026-03-04 18:13:30,804 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 69746.20$ | EMA: 69544.14$ | Vol: 1348 vs MA: 873
+2026-03-04 18:13:30,805 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 69763.24$ | EMA: 69460.82$ | Vol: 1602 vs MA: 740
+2026-03-04 18:13:30,808 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 68218.85$ | EMA: 68190.66$ | Vol: 997 vs MA: 652
+2026-03-04 18:13:30,813 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 66973.20$ | EMA: 66524.16$ | Vol: 2180 vs MA: 878
+2026-03-04 18:13:30,816 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 67310.53$ | EMA: 66912.39$ | Vol: 1058 vs MA: 951
+2026-03-04 18:13:30,820 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 66934.79$ | EMA: 66562.93$ | Vol: 1311 vs MA: 914
+2026-03-04 18:13:30,822 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 67177.06$ | EMA: 66489.83$ | Vol: 3015 vs MA: 1068
+2026-03-04 18:13:30,822 - strategies.sniper_v11 - INFO - 🎯 Signal Sniper V11 détecté ! Prix: 67725.81$ | EMA: 66860.40$ | Vol: 1695 vs MA: 1033
+2026-03-04 18:13:30,823 - backtest - INFO - Backtest terminé : 62 trades, WR: 27.4%
+2026-03-04 18:13:30,875 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:37,296 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:40,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:40,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:40,233 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration de l'utilisateur 2066493813
+2026-03-04 18:13:40,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:41,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:41,097 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:41,101 - handlers.callbacks - INFO - Callback reçu : info_sniper de l'utilisateur 2066493813
+2026-03-04 18:13:41,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:41,996 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:42,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:42,042 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 18:13:42,103 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:43,469 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:43,511 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:43,512 - handlers.callbacks - INFO - Callback reçu : info_short de l'utilisateur 2066493813
+2026-03-04 18:13:43,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:44,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:44,112 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:44,113 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_short de l'utilisateur 2066493813
+2026-03-04 18:13:44,169 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:45,760 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:13:45,798 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:13:45,799 - handlers.callbacks - INFO - Callback reçu : bts_run_4300 de l'utilisateur 2066493813
+2026-03-04 18:13:45,847 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:45,852 - backtest_short - INFO - 🏦 Téléchargement de 4300h de données BTC/USDT...
+2026-03-04 18:13:50,408 - backtest_short - INFO - ✅ 4300 bougies téléchargées
+2026-03-04 18:13:50,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:50,479 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 115232.29$ | EMA: 115532.85$ | Vol: 197 vs MA: 180
+2026-03-04 18:13:50,493 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 119819.77$ | EMA: 121107.54$ | Vol: 2831 vs MA: 827
+2026-03-04 18:13:50,498 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 120493.17$ | EMA: 121148.55$ | Vol: 1336 vs MA: 618
+2026-03-04 18:13:50,507 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 110282.76$ | EMA: 110541.92$ | Vol: 1077 vs MA: 901
+2026-03-04 18:13:50,509 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 109066.98$ | EMA: 110405.80$ | Vol: 2484 vs MA: 1690
+2026-03-04 18:13:50,517 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 111509.74$ | EMA: 112360.13$ | Vol: 1922 vs MA: 694
+2026-03-04 18:13:50,533 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 110850.17$ | EMA: 110890.73$ | Vol: 519 vs MA: 458
+2026-03-04 18:13:50,548 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 104530.83$ | EMA: 104790.92$ | Vol: 2106 vs MA: 828
+2026-03-04 18:13:50,565 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 87000.00$ | EMA: 90183.14$ | Vol: 4607 vs MA: 654
+2026-03-04 18:13:50,568 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 90465.14$ | EMA: 90763.50$ | Vol: 1525 vs MA: 592
+2026-03-04 18:13:50,573 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 89961.37$ | EMA: 90433.79$ | Vol: 2038 vs MA: 713
+2026-03-04 18:13:50,579 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 90357.59$ | EMA: 90415.71$ | Vol: 710 vs MA: 493
+2026-03-04 18:13:50,583 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 89935.14$ | EMA: 91132.61$ | Vol: 3506 vs MA: 790
+2026-03-04 18:13:50,586 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 87233.44$ | EMA: 89062.94$ | Vol: 4101 vs MA: 710
+2026-03-04 18:13:50,586 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 88345.20$ | EMA: 88597.30$ | Vol: 2495 vs MA: 671
+2026-03-04 18:13:50,588 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 88052.43$ | EMA: 88418.13$ | Vol: 981 vs MA: 654
+2026-03-04 18:13:50,590 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 87380.43$ | EMA: 88080.40$ | Vol: 1729 vs MA: 680
+2026-03-04 18:13:50,591 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 87780.01$ | EMA: 88018.90$ | Vol: 807 vs MA: 722
+2026-03-04 18:13:50,592 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 87953.97$ | EMA: 88049.33$ | Vol: 1281 vs MA: 414
+2026-03-04 18:13:50,597 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 90901.39$ | EMA: 91036.92$ | Vol: 816 vs MA: 617
+2026-03-04 18:13:50,600 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 90752.27$ | EMA: 90921.13$ | Vol: 1299 vs MA: 518
+2026-03-04 18:13:50,607 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 93673.14$ | EMA: 94249.49$ | Vol: 1931 vs MA: 309
+2026-03-04 18:13:50,615 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 89403.77$ | EMA: 89497.25$ | Vol: 688 vs MA: 552
+2026-03-04 18:13:50,643 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 69460.00$ | EMA: 69556.50$ | Vol: 3394 vs MA: 757
+2026-03-04 18:13:50,645 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 69314.21$ | EMA: 69648.91$ | Vol: 1027 vs MA: 630
+2026-03-04 18:13:50,648 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 67948.99$ | EMA: 68188.25$ | Vol: 639 vs MA: 609
+2026-03-04 18:13:50,654 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 66643.55$ | EMA: 66909.20$ | Vol: 2050 vs MA: 986
+2026-03-04 18:13:50,654 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 66604.91$ | EMA: 66996.09$ | Vol: 1415 vs MA: 876
+2026-03-04 18:13:50,656 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 66560.14$ | EMA: 66565.28$ | Vol: 1476 vs MA: 986
+2026-03-04 18:13:50,657 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 66647.98$ | EMA: 66846.36$ | Vol: 1768 vs MA: 1405
+2026-03-04 18:13:50,657 - strategies.sniper_short_v11 - INFO - 🎯 Signal Sniper SHORT V11 détecté ! Prix: 66568.95$ | EMA: 66851.71$ | Vol: 1715 vs MA: 993
+2026-03-04 18:13:50,658 - backtest_short - INFO - Backtest SHORT terminé : 31 trades, WR: 35.5%
+2026-03-04 18:13:50,715 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:13:52,981 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:14:37 UTC)" (scheduled at 2026-03-04 17:13:52.979369+00:00)
+2026-03-04 18:13:52,981 - trading - INFO - ⚙️ 18:13 - Scan Multi-Stratégies...
+2026-03-04 18:13:53,234 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 17:00:00
+2026-03-04 18:13:53,235 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 16:45:00 close=73294.84$ high=73458.00$ low=73079.14$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 18:13:53,235 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.254s
+2026-03-04 18:13:53,236 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:14:37 UTC)" executed successfully
+2026-03-04 18:13:55,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:01,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:01,593 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:01,594 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_short de l'utilisateur 2066493813
+2026-03-04 18:14:01,646 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:02,531 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:02,572 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:02,575 - handlers.callbacks - INFO - Callback reçu : info_short de l'utilisateur 2066493813
+2026-03-04 18:14:02,629 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:03,535 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:03,578 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:03,581 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 18:14:03,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:04,686 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:04,735 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:04,736 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-03-04 18:14:04,791 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:05,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:05,703 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:05,705 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-03-04 18:14:05,771 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:06,706 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:06,751 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:06,752 - handlers.callbacks - INFO - Callback reçu : btr_run_2880 de l'utilisateur 2066493813
+2026-03-04 18:14:06,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:06,803 - backtest_rsi - INFO - 📥 Téléchargement de 2880 bougies 15min BTC/USDT...
+2026-03-04 18:14:10,364 - backtest_rsi - INFO - ✅ 2880 bougies téléchargées
+2026-03-04 18:14:10,422 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:10,429 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 77156.24 | BB Lower: 77668.20 | RSI: 29.1
+2026-03-04 18:14:10,430 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 75086.83 | BB Lower: 75652.01 | RSI: 25.9
+2026-03-04 18:14:10,431 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 73710.88 | BB Lower: 73975.38 | RSI: 19.0
+2026-03-04 18:14:10,437 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 68011.11 | BB Lower: 68319.13 | RSI: 29.3
+2026-03-04 18:14:10,438 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63373.00 | BB Lower: 63946.73 | RSI: 24.2
+2026-03-04 18:14:10,438 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 60100.00 | BB Lower: 61593.39 | RSI: 21.9
+2026-03-04 18:14:10,441 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 67388.24 | BB Upper: 67351.89 | RSI: 70.3
+2026-03-04 18:14:10,441 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68647.45 | BB Upper: 68103.47 | RSI: 74.6
+2026-03-04 18:14:10,441 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69800.00 | BB Upper: 69404.41 | RSI: 77.9
+2026-03-04 18:14:10,442 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 71500.00 | BB Upper: 71097.23 | RSI: 85.0
+2026-03-04 18:14:10,443 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 67300.00 | BB Lower: 68106.93 | RSI: 29.1
+2026-03-04 18:14:10,449 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 68982.76 | BB Lower: 69219.27 | RSI: 24.3
+2026-03-04 18:14:10,453 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 67556.00 | BB Lower: 67944.05 | RSI: 25.9
+2026-03-04 18:14:10,455 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68834.34 | BB Upper: 67732.18 | RSI: 73.5
+2026-03-04 18:14:10,460 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68028.45 | BB Upper: 67525.31 | RSI: 72.1
+2026-03-04 18:14:10,460 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69309.80 | BB Upper: 68411.66 | RSI: 78.7
+2026-03-04 18:14:10,464 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69735.61 | BB Upper: 69479.38 | RSI: 76.6
+2026-03-04 18:14:10,466 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 70926.42 | BB Upper: 70919.70 | RSI: 71.0
+2026-03-04 18:14:10,472 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66902.15 | BB Lower: 67535.24 | RSI: 27.1
+2026-03-04 18:14:10,477 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66137.14 | BB Lower: 66301.96 | RSI: 28.7
+2026-03-04 18:14:10,482 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 65006.11 | BB Lower: 65654.73 | RSI: 14.7
+2026-03-04 18:14:10,485 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63342.90 | BB Lower: 63557.72 | RSI: 29.0
+2026-03-04 18:14:10,486 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 63970.05 | BB Upper: 63654.50 | RSI: 70.5
+2026-03-04 18:14:10,486 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 66300.00 | BB Upper: 65274.99 | RSI: 79.5
+2026-03-04 18:14:10,487 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 67249.20 | BB Upper: 66868.07 | RSI: 70.3
+2026-03-04 18:14:10,488 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68647.23 | BB Upper: 68532.47 | RSI: 83.4
+2026-03-04 18:14:10,491 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 66855.21 | BB Lower: 67391.62 | RSI: 26.3
+2026-03-04 18:14:10,493 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 65904.66 | BB Lower: 65965.18 | RSI: 24.2
+2026-03-04 18:14:10,495 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 64400.00 | BB Lower: 65181.27 | RSI: 17.8
+2026-03-04 18:14:10,495 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 63030.00 | BB Lower: 64254.46 | RSI: 9.6
+2026-03-04 18:14:10,496 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 66664.16 | BB Upper: 66128.52 | RSI: 71.5
+2026-03-04 18:14:10,500 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger LONG ! Low: 65084.02 | BB Lower: 65197.25 | RSI: 28.0
+2026-03-04 18:14:10,501 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68800.00 | BB Upper: 67818.97 | RSI: 79.6
+2026-03-04 18:14:10,501 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 69775.91 | BB Upper: 69253.74 | RSI: 79.4
+2026-03-04 18:14:10,504 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 68999.00 | BB Upper: 68311.16 | RSI: 70.0
+2026-03-04 18:14:10,505 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 71163.00 | BB Upper: 70125.14 | RSI: 80.4
+2026-03-04 18:14:10,505 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 72997.00 | BB Upper: 72329.56 | RSI: 76.6
+2026-03-04 18:14:10,506 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 73097.08 | BB Upper: 72515.67 | RSI: 71.0
+2026-03-04 18:14:10,506 - strategies.rsi_bollinger_15m - INFO - 🎯 Signal RSI Bollinger SHORT ! High: 73479.75 | BB Upper: 72830.63 | RSI: 75.9
+2026-03-04 18:14:10,506 - backtest_rsi - INFO - Backtest RSI terminé : 36 trades, WR: 22.2%
+2026-03-04 18:14:10,554 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:16,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:23,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:23,583 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:23,584 - handlers.callbacks - INFO - Callback reçu : menu_backtest_duration_rsi de l'utilisateur 2066493813
+2026-03-04 18:14:23,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:25,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:25,628 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:25,633 - handlers.callbacks - INFO - Callback reçu : info_rsi de l'utilisateur 2066493813
+2026-03-04 18:14:25,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:26,361 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:26,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:26,411 - handlers.callbacks - INFO - Callback reçu : menu_strategies de l'utilisateur 2066493813
+2026-03-04 18:14:26,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:26,919 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:26,961 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:26,962 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 18:14:27,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:27,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:27,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:27,561 - handlers.callbacks - INFO - Callback reçu : ask_stop de l'utilisateur 2066493813
+2026-03-04 18:14:27,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:29,179 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:29,217 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:14:29,218 - handlers.callbacks - INFO - Callback reçu : back_to_dash de l'utilisateur 2066493813
+2026-03-04 18:14:29,280 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:14:37,981 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:15:22 UTC)" (scheduled at 2026-03-04 17:14:37.979369+00:00)
+2026-03-04 18:14:37,982 - trading - INFO - ⚙️ 18:14 - Scan Multi-Stratégies...
+2026-03-04 18:14:38,246 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 17:00:00
+2026-03-04 18:14:38,247 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 16:45:00 close=73294.84$ high=73458.00$ low=73079.14$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 18:14:38,248 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.266s
+2026-03-04 18:14:38,248 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:15:22 UTC)" executed successfully
+2026-03-04 18:14:39,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:49,233 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:14:59,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:15:09,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:15:19,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:15:22,996 - apscheduler.executors.default - INFO - Running job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:16:07 UTC)" (scheduled at 2026-03-04 17:15:22.979369+00:00)
+2026-03-04 18:15:22,997 - trading - INFO - ⚙️ 18:15 - Scan Multi-Stratégies...
+2026-03-04 18:15:23,251 - trading - INFO - [CHECK_MARKET] tf=15m candles=200 last_time=2026-03-04 17:15:00
+2026-03-04 18:15:23,251 - trading - INFO - Position SHORT ouverte (tf=15m) : t=2026-03-04 17:00:00 close=73545.44$ high=73700.00$ low=73180.64$ | SL: 74066.73$ | TP: 69688.40$
+2026-03-04 18:15:23,253 - trading - INFO - [CHECK_MARKET] done tf=15m in 0.256s
+2026-03-04 18:15:23,253 - apscheduler.executors.default - INFO - Job "check_market (trigger: interval[0:00:45], next run at: 2026-03-04 17:16:07 UTC)" executed successfully
+2026-03-04 18:15:29,341 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:15:34,140 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:15:34,226 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:15:34,227 - handlers.callbacks - INFO - Callback reçu : ask_stop de l'utilisateur 2066493813
+2026-03-04 18:15:34,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/editMessageText "HTTP/1.1 200 OK"
+2026-03-04 18:15:35,848 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/getUpdates "HTTP/1.1 200 OK"
+2026-03-04 18:15:35,888 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-03-04 18:15:35,890 - handlers.callbacks - INFO - Callback reçu : confirm_stop de l'utilisateur 2066493813
+2026-03-04 18:15:35,890 - handlers.callbacks - WARNING - 🛑 Arrêt du bot demandé par l'utilisateur
+2026-03-04 18:15:35,931 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8560179089:AAFtHUSXnyDVBgMypPNFXzya161oaJAnQjY/deleteMessage "HTTP/1.1 200 OK"
